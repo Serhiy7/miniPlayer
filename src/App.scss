@@ -1,0 +1,50 @@
+:root {
+  --bg-color: #fafafa;
+  --text-color: #333333;
+  --accent-color: #1e90ff;
+  --control-bg: #ffffff;
+}
+
+.dark {
+  --bg-color: #1e1e1e;
+  --text-color: #eeeeee;
+  --accent-color: #4aa3ff;
+  --control-bg: #2a2a2a;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+  font-family: inherit;
+}
+
+/* Дополнительно: определим CSS-переменные в формате RGB для более лёгкой прозрачности */
+
+:root {
+  --accent-color-rgb: 30, 144, 255; /* rgb(30,144,255) соответствует #1e90ff */
+}
+
+.dark {
+  --accent-color-rgb: 74, 163, 255; /* rgb(74,163,255) соответствует #4aa3ff */
+}

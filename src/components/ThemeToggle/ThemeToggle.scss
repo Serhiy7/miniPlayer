@@ -1,0 +1,12 @@
+.theme-toggle {
+  background-color: var(--control-bg);
+  color: var(--text-color);
+  font-size: 0.875rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+
+  &:hover {
+    background-color: rgba(var(--accent-color-rgb), 0.1);
+  }
+}

@@ -1,0 +1,21 @@
+.yt-progress-container {
+  width: 100%;
+  margin-bottom: 10px;
+
+  .yt-progress-bar {
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .yt-time-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    margin-top: 4px;
+
+    span {
+      width: 2.5rem;
+      text-align: center;
+    }
+  }
+}
