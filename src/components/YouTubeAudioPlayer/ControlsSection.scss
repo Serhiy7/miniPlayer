@@ -1,0 +1,23 @@
+/* src/components/YouTubeAudioPlayer/ControlsSection.scss */
+.yt-controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+
+  .yt-btn {
+    background-color: var(--control-bg);
+    font-size: 24px;
+    padding: 4px;
+    border-radius: 4px;
+    transition: transform 0.1s ease-in-out, color 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &.active {
+      color: var(--accent-color);
+    }
+  }
+}

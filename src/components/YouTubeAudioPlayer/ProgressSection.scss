@@ -1,8 +1,7 @@
-/* src/components/ProgressBar/ProgressBar.scss */
-
+/* src/components/YouTubeAudioPlayer/ProgressSection.scss */
 .yt-progress-container {
   width: 100%;
-  margin: 10px 0;
+  margin-bottom: 10px;
 
   .time-display {
     display: flex;
@@ -10,8 +9,7 @@
     font-size: 0.75rem;
     margin-bottom: 4px;
 
-    .current-time,
-    .total-time {
+    span {
       width: 3rem;
       text-align: center;
     }
@@ -37,7 +35,7 @@
       border-radius: 50%;
       background: var(--accent-color);
       cursor: pointer;
-      margin-top: -3px; /* чтобы центр ползунка совпал с полоской */
+      margin-top: -3px;
     }
     &::-moz-range-thumb {
       width: 12px;

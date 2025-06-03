@@ -1,0 +1,17 @@
+/* src/components/YouTubeAudioPlayer/VolumeSection.scss */
+.yt-volume-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  margin-top: 10px;
+
+  label {
+    font-size: 0.875rem;
+  }
+
+  input[type="range"] {
+    flex-grow: 1;
+    cursor: pointer;
+  }
+}

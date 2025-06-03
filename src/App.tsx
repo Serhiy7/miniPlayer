@@ -1,5 +1,5 @@
 import React from "react";
-import YouTubeAudioPlayer from "./components/YouTubeAudioPlayer/YoutubePlayer";
+import YouTubeAudioPlayer from "./components/YouTubeAudioPlayer/YouTubeAudioPlayer";
 
 const App: React.FC = () => {
   return (

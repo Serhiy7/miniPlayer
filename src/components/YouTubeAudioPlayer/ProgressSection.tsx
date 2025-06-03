@@ -1,19 +1,18 @@
-// src/components/ProgressBar/ProgressBar.tsx
+// src/components/YouTubeAudioPlayer/ProgressSection.tsx
 import React from "react";
-import "./ProgressBar.scss";
+import "./ProgressSection.scss";
 
-interface ProgressBarProps {
-  progress: number; // текущее время (в секундах)
-  duration: number; // общая длительность (в секундах)
-  onSeek: (time: number) => void; // коллбэк при изменении позиции
+interface ProgressSectionProps {
+  progress: number;
+  duration: number;
+  onSeek: (time: number) => void;
 }
 
-const ProgressBar: React.FC<ProgressBarProps> = ({
+const ProgressSection: React.FC<ProgressSectionProps> = ({
   progress,
   duration,
   onSeek,
 }) => {
-  // Форматируем секунды в строку "mm:ss"
   const formatTime = (time: number): string => {
     if (isNaN(time) || time < 0) return "00:00";
     const minutes = Math.floor(time / 60);
@@ -24,7 +23,6 @@ const ProgressBar: React.FC<ProgressBarProps> = ({
     )}`;
   };
 
-  // Когда пользователь меняет рейндж
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const newTime = parseFloat(e.target.value);
     onSeek(newTime);
@@ -33,12 +31,9 @@ const ProgressBar: React.FC<ProgressBarProps> = ({
   return (
     <div className="yt-progress-container">
       <div className="time-display">
-        {/* Слева: текущая позиция, справа: общая длительность */}
         <span className="current-time">{formatTime(progress)}</span>
         <span className="total-time">{formatTime(duration)}</span>
       </div>
-
-      {/* Сама полоска перемотки: */}
       <input
         type="range"
         min="0"
@@ -52,4 +47,4 @@ const ProgressBar: React.FC<ProgressBarProps> = ({
   );
 };
 
-export default ProgressBar;
+export default ProgressSection;

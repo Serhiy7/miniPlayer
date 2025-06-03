@@ -1,0 +1,22 @@
+/* src/components/YouTubeAudioPlayer/YouTubeAudioPlayer.scss */
+.yt-audio-player-container {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+
+  h2 {
+    font-size: 1.25rem;
+    margin: 0;
+  }
+}

@@ -1,0 +1,24 @@
+/* src/components/YouTubeAudioPlayer/PlaylistSection.scss */
+.yt-playlist {
+  max-height: 120px;
+  overflow-y: auto;
+  margin-bottom: 15px;
+  padding: 0;
+  list-style: none;
+
+  .yt-playlist-item {
+    padding: 8px 12px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    &.active {
+      background-color: rgba(var(--accent-color-rgb), 0.2);
+      font-weight: bold;
+    }
+  }
+}
